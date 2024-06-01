@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>capitals of countries</title>
+<style>
+p{
+color:rgb(208, 32, 99);
+font-weight:bold;
+font-size:50;
+}
+body{
+    background-image: url('https://th.bing.com/th/id/R.7935f1cccd4c1c249d040c35fd65c2e9?rik=WeXK7Ecr4xFgug&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fWorld-HD-Pics-05117.jpg&ehk=OSk4ZzfhuziohNRm5P3iQIYFPmDH4p0ieNHGbgDm%2b%2b8%3d&risl=&pid=ImgRaw&r=0');
+    font-family: algerian ;
+    font-stretch: normal;
+}
+h1{
+    color:rgb(27, 254, 20);
+}
+</style>
+<script language="javascript">
+function capital()
+{
+var cunt=document.forms["frm1"].country.value; 
+var capital=" Please select any country ";
+if( cunt=="india")
+{
+capital="NEW DELHI";
+}
+if( cunt=="china")
+{
+capital="BEIJING";
+}
+if( cunt=="pakistan")
+{
+capital="ISLAMABAD";
+}
+if( cunt=="bangladesh")
+{
+capital="DHAKA";
+}
+if( cunt=="japan")
+{
+capital="TOKYO";
+}
+if( cunt=="us")
+{
+capital="UNITED STATE";
+}
+if( cunt=="uk")
+{
+capital="UNITED KINGDOM";
+}
+if( cunt=="australia")
+{
+capital="NEWZELAND";
+}
+if( cunt=="america")
+{
+capital="SWITZERLAND";
+}
+if( cunt=="nepal")
+{
+capital="CAPETOWN";
+}
+
+if( cunt=="select")
+{
+capital="Please select any country";
+}
+document.getElementById("capt").innerHTML=capital;
+}
+</script>
+</head>
+<body>
+<form name="frm1">
+<br/>
+<center>
+<h1>Select a Country :</h1> <select name="country" onchange="capital()" style="color: rgb(249, 160, 6);">
+<option value="select">--SELECT--</option>
+<option value="india">INDIA</option>
+<option value="china">CHINA</option>
+<option value="pakistan">PAKISTAN</option>
+<option value="bangladesh">BANGLADESH</option>
+<option value="us">US</option>
+<option value="uk">UK</option>
+<option value="australia">australia</option>
+<option value="america">america</option>
+<option value="nepal">nepal</option>
+</select>
+<br/>
+<br/>
+<font color="rgba(123,125,78,0.4)" size="6">Capital is :</font> <p id="capt"></p>
+</center>
+</form>
+</body>
+</html>
